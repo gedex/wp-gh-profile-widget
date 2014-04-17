@@ -1,0 +1,153 @@
+.gh-profile-widget a {
+	text-decoration: none;
+}
+
+/* Avatar */
+.gh-profile-widget .vcard-avatar {
+	display: block;
+	text-align: center;
+}
+.gh-profile-widget .vcard-avatar img {
+	border-radius: 50%;
+}
+
+/* Fullname and username */
+.gh-profile-widget .vcard-names {
+	margin-top: 5px;
+	margin-bottom: 15px;
+	line-height: 1;
+}
+.gh-profile-widget .vcard-fullname {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	font-size: 20px;
+	line-height: 30px;
+	text-overflow: ellipsis;
+	text-align: center;
+}
+.gh-profile-widget .vcard-username {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 24px;
+	text-overflow: ellipsis;
+	text-align: center;
+}
+
+/* Details (company, location, etc) */
+.gh-profile-widget .vcard-details {
+	list-style: none;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.gh-profile-widget .vcard-detail {
+	width: 100%;
+	padding: 2px 0 2px 24px;
+	overflow-x: hidden;
+	font-size: 14px;
+	text-overflow: ellipsis;
+	line-height: 1.4;
+}
+.gh-profile-widget .vcard-detail .octicon {
+	float: left;
+	width: 16px;
+	text-align: center;
+	margin-left: -24px;
+	color: #ccc;
+}
+
+/* Stats (followers, starred, followings) */
+.gh-profile-widget .vcard-stats {
+	margin-bottom: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+.gh-profile-widget .vcard-stats:before,
+.gh-profile-widget .vcard-stats:after {
+	content: " ";
+	display: table;
+}
+.gh-profile-widget .vcard-stat {
+	float: left;
+	width: 33.333%;
+	font-size: 11px;
+}
+.gh-profile-widget .vcard-stat-count {
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1;
+}
+
+/* Organizations */
+.gh-profile-widget .vcard-orgs:before,
+.gh-profile-widget .vcard-orgs:after {
+	content: " ";
+	display: table;
+}
+.gh-profile-widget .vcard-orgs .vcard-org-avatar {
+	display: inline-block;
+}
+.gh-profile-widget .vcard-orgs img {
+	border-radius: 3px;
+	box-shadow: none;
+}
+
+/* Theme. For dark background like twentyfourteen */
+.gh-profile-widget.dark-background .vcard-fullname,
+.gh-profile-widget.dark-background .vcard-fullname a {
+	color: #fff;
+}
+.gh-profile-widget.dark-background .vcard-username,
+.gh-profile-widget.dark-background .vcard-username a {
+	color: rgba(255, 255, 255, 0.8);
+}
+.gh-profile-widget.dark-background .vcard-details {
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+.gh-profile-widget.dark-background .vcard-stats {
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.gh-profile-widget.dark-background .vcard-stats {
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.gh-profile-widget.dark-background .vcard-stat {
+	color: rgba(255, 255, 255, 0.7);
+}
+.gh-profile-widget.dark-background .vcard-stat-count {
+	color: #fff;
+}
+
+/* Theme. For light background like twentytwelve */
+.gh-profile-widget.light-background .vcard-fullname,
+.gh-profile-widget.light-background .vcard-fullname a {
+	color: #333;
+}
+.gh-profile-widget.light-background .vcard-username,
+.gh-profile-widget.light-background .vcard-username a {
+	color: #666;
+}
+.gh-profile-widget.light-background .vcard-details {
+	border-top: 1px solid #ededed;
+}
+.gh-profile-widget.light-background .vcard-stats {
+	border-top: 1px solid #ededed;
+	border-bottom: 1px solid #ededed;
+}
+.gh-profile-widget.light-background .vcard-stats {
+	border-top: 1px solid #ededed;
+	border-bottom: 1px solid #ededed;
+}
+.gh-profile-widget.light-background .vcard-stat {
+	color: #666;
+}
+.gh-profile-widget.light-background .vcard-stat-count {
+	color: #333;
+}
