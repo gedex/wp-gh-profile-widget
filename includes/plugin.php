@@ -11,8 +11,8 @@ class GH_Profile_Widget_Plugin {
 	 */
 	public function run( $path, $api ) {
 		// Basic plugin information.
-		$this->name    = 'search_tweets_widget'; // This maybe used to prefix options, slug of menu or page, and filters/actions.
-		$this->version = '0.1.0';
+		$this->name    = 'gh_profile_widget'; // This maybe used to prefix options, slug of menu or page, and filters/actions.
+		$this->version = '0.2.0';
 
 		// Path.
 		$this->plugin_path   = trailingslashit( plugin_dir_path( $path ) );
