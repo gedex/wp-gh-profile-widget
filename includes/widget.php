@@ -85,7 +85,7 @@ class GH_Profile_Widget extends WP_Widget {
 			<input class="widefat" type="text" id="<?php echo esc_attr( $this->get_field_id('username') ); ?>" name="<?php echo esc_attr( $this->get_field_name('username') ); ?>" value="<?php echo esc_attr( $instance['username'] ); ?>">
 		</p>
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id('username') ); ?>"><?php _e( 'Widget theme', 'github-api' ); ?></label>
+			<label for="<?php echo esc_attr( $this->get_field_id('theme') ); ?>"><?php _e( 'Widget theme', 'github-api' ); ?></label>
 			<br>
 			<select id="<?php echo esc_attr( $this->get_field_id('theme') ); ?>" name="<?php echo esc_attr( $this->get_field_name('theme') ); ?>" value="<?php echo esc_attr( $instance['theme'] ); ?>">
 			<?php foreach ( $this->get_themes() as $theme ) : ?>
