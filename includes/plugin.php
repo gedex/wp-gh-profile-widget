@@ -29,6 +29,8 @@ class GH_Profile_Widget_Plugin {
 		$this->api = $api;
 
 		add_action( 'widgets_init', array( $this, 'register_widget' ) );
+
+		add_action( 'init', array( $this, 'enqueue_style' ) );
 	}
 
 	/**
@@ -39,5 +41,17 @@ class GH_Profile_Widget_Plugin {
 	public function register_widget() {
 		require_once $this->includes_path . 'widget.php';
 		register_widget( 'GH_Profile_Widget' );
+	}
+
+	/**
+	 * Enqueue style for the widget only if widget is active.
+	 *
+	 * @action init
+	 */
+	public function enqueue_style() {
+		if ( is_active_widget( false, false, 'gh_profile_widget' ) && ! is_admin() ) {
+			wp_enqueue_style( 'gh-octicons' );
+			wp_enqueue_style( 'gh-profile-widget', $this->css_path . 'widget.css', false, $this->version, 'all' );
+		}
 	}
 }

@@ -14,11 +14,6 @@ class GH_Profile_Widget extends WP_Widget {
 	}
 
 	public function widget( $args, $instance ) {
-		$plugin = $GLOBALS['gh_profile_widget'];
-
-		wp_enqueue_style( 'gh-profile-widget',          $plugin->css_path . 'widget.css', array(), $plugin->version, 'all' );
-		wp_enqueue_style( 'gh-profile-widget-octicons', $plugin->css_path . 'octicons.min.css', array(), $plugin->version, 'all' );
-
 		extract( $args );
 		/**
 		 * @var string $name
