@@ -32,5 +32,9 @@ This plugin depends on [GitHub API](http://wordpress.org/plugins/github-api/) pl
 
 == Changelog ==
 
+= 0.2.0 =
+* Removes octicons as it's now being registered by github-api plugin
+* Enqueues styles only when the widget is active
+
 = 0.1.0 =
 Initial release
