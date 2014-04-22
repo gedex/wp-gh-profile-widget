@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: GitHub Profile Widget
- * Plugin URI: https://github.com/gedex/wp-github-api
+ * Plugin URI: https://github.com/gedex/wp-gh-profile-widget
  * Description: Plugin extension for GitHub API plugin for showing off GitHub profile in a widget.
  * Version: 0.2.0
  * Author: Akeda Bagus
